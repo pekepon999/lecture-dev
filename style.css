@@ -1,0 +1,35 @@
+body{
+  min-height: 100vh;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+a{
+  display: block;
+  text-decoration: none;
+  transition: all .5s ease;
+}
+p{
+  text-decoration: none;
+}
+a:hover{
+  font-weight: 600;
+  opacity: 0.78;
+}
+.container{
+  width: 1000px;
+  margin: 0 auto;
+}
+header{
+  width: 100%;
+  background-color: skyblue;
+}
+nav ul.lists{
+  display: flex;
+  justify-content: space-around;
+
+}
+img{
+  max-width: 100%;
+  display: inline-block;
+  pointer-events: none;
+  border-radius: .7em;
+}
