@@ -1,19 +1,32 @@
 body{
   min-height: 100vh;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ 
 }
 a{
   display: block;
   text-decoration: none;
-  transition: all .5s ease;
+  transition: all .2s ease;
+  
 }
 p{
-  text-decoration: none;
+  user-select: none;
+}
+li{
+  list-style-type: none;
 }
 a:hover{
   font-weight: 600;
   opacity: 0.78;
+  background-color: aquamarine;
 }
+img{
+  max-width: 100%;
+  display: inline-block;
+  pointer-events: none;
+  border-radius: .7em;
+}
+/* 共通 */
+/* ここからヘッダー */
 .container{
   width: 1000px;
   margin: 0 auto;
@@ -25,11 +38,60 @@ header{
 nav ul.lists{
   display: flex;
   justify-content: space-around;
-
+ 
 }
-img{
+/* ここまでヘッダー */
+.inner-info{
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid skyblue;
+  margin-bottom: 12px;
+}
+.inner-info section:first-child{
+  text-align: center;
+  margin-left: 32px;
+  
+}
+.center-content {
+  width: 800px;
+  margin: 0 auto;
+  border: 1px solid black;
+  padding: 12px;
+  text-align: justify;
+}
+.center-content img{
+
   max-width: 100%;
-  display: inline-block;
-  pointer-events: none;
-  border-radius: .7em;
+  width: 600px;
+  display: block;
+  margin: 0 auto;
+}
+.center-content p{
+  line-height: 2.0;
+}
+/* ここから下へ */
+.bottom-content{
+  width: 1000px;
+  margin: 0 auto;
+}
+.bottom-content h2{
+  text-align: center;
+  border: 2px solid beige;
+}
+.practice-percentage{
+
+  display: flex;
+  justify-content:center;
+  margin: 20px;
+  gap:10px
+ 
+}
+
+
+
+footer{
+  margin-top: 120px;
+  text-align: center;
 }
